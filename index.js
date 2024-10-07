@@ -33,20 +33,20 @@ app.post('/products', (req, res) => {
         return res.status(400).json({ error: 'Missing product fields' });
     }
 
-//     products.push(product);
-//     res.status(201).json({ message: 'Product added successfully!', product });
+    products.push(product);
+    res.status(201).json({ message: 'Product added successfully!', product });
 
-//     console.log(`< products POST: sending response`);
-//     console.log(`Processed Request Count --> Get:${getRequestCount}, Post:${postRequestCount}`);
-// });
+    console.log(`< products POST: sending response`);
+    console.log(`Processed Request Count --> Get:${getRequestCount}, Post:${postRequestCount}`);
+});
 
-// // DELETE request to delete all products
-// app.delete('/products', (req, res) => {
-//     products = [];
-//     console.log(`> products DELETE: received request`);
-//     res.json({ message: 'All products deleted successfully!' });
-//     console.log(`< products DELETE: sending response`);
-// });
+// DELETE request to delete all products
+app.delete('/products', (req, res) => {
+    products = [];
+    console.log(`> products DELETE: received request`);
+    res.json({ message: 'All products deleted successfully!' });
+    console.log(`< products DELETE: sending response`);
+});
 
 // Log server startup information
 app.listen(PORT, () => {
