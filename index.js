@@ -24,14 +24,14 @@ app.get('/products', (req, res) => {
 });
 
 // POST request to add a new product
-// app.post('/products', (req, res) => {
-//     postRequestCount++;
-//     console.log('> products POST: received request');
+app.post('/products', (req, res) => {
+    postRequestCount++;
+    console.log('> products POST: received request');
     
-//     const product = req.body;
-//     if (!product.productId || !product.name || !product.price || !product.quantity) {
-//         return res.status(400).json({ error: 'Missing product fields' });
-//     }
+    const product = req.body;
+    if (!product.productId || !product.name || !product.price || !product.quantity) {
+        return res.status(400).json({ error: 'Missing product fields' });
+    }
 
 //     products.push(product);
 //     res.status(201).json({ message: 'Product added successfully!', product });
