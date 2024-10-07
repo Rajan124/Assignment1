@@ -10,9 +10,10 @@ This project implements a simple Product Management API with the following funct
 - Request counters for GET and POST requests.
 
 ## Screenshots
-![Get](screenshots/Screenshot 2024-10-06 203812.png)
-![POST Request](screenshots/Screenshot 2024-10-06 203940.png)
-![Delete Request](screenshots/Screenshot 2024-10-06 204035.png)
+![Get](screenshots/Screenshot_2024-10-06_203812.png)
+![POST Request](screenshots/Screenshot_2024-10-06_203940.png)
+![Delete Request](screenshots/Screenshot_2024-10-06_204035.png)
+
 
 
 ## Getting Started
